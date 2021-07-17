@@ -8,9 +8,6 @@ export default async function recebedorDeRequest(request, response) {
     const registroCriado = await client.items.create({
       itemType: "968619",
       ...request.body,
-      //title: "",
-      //imageUrl: "",
-      //creatorSlug: "",
     });
 
     response.json({
